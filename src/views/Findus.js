@@ -1,7 +1,7 @@
-import EnergyPage from "../components/EnergyPage";
+import PageLayout from "../components/PageLayout";
 
-const Fusion = () => (
-  <EnergyPage
+const Findus = () => (
+  <PageLayout
     title="Fusion Energy"
     imageSrc="https://upload.wikimedia.org/wikipedia/commons/e/ed/Preamplifier_at_the_National_Ignition_Facility.jpg"
     description="Fusion power is a proposed form of power generation that would generate electricity by using heat 
@@ -31,4 +31,4 @@ const Fusion = () => (
   />
 );
 
-export default Fusion;
+export default Findus;

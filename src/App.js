@@ -2,10 +2,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import './App.css';
 import Home from './views/Home';
-import Solar from './views/Solar';
-import Wind from './views/Wind';
-import Geothermal from './views/Geothermal';
-import Fusion from './views/Fusion';
+import About from './views/About';
+import Coffee from './views/Coffee';
+import Menu from './views/Menu';
+import Findus from './views/Findus';
 import Contact from './views/Contact';
 import Footer from './components/Footer';
 
@@ -19,10 +19,10 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/solar" element={<Solar />} />
-        <Route path="/wind" element={<Wind />} />
-        <Route path="/geothermal" element={<Geothermal />} />
-        <Route path="/fusion" element={<Fusion />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/coffee" element={<Coffee />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/findus" element={<Findus />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
 

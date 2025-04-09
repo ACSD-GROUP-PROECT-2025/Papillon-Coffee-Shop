@@ -1,7 +1,7 @@
-import EnergyPage from "../components/EnergyPage";
+import PageLayout from "../components/PageLayout";
 
-const Geothermal = () => (
-  <EnergyPage
+const Menu = () => (
+  <PageLayout
     title="Geothermal Energy"
     imageSrc="https://upload.wikimedia.org/wikipedia/commons/9/9f/NesjavellirPowerPlant_edit2.jpg"
     description="Geothermal energy is thermal energy extracted from the Earth's crust. It combines energy from the 
@@ -26,4 +26,4 @@ const Geothermal = () => (
   />
 );
 
-export default Geothermal;
+export default Menu;
