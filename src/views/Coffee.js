@@ -1,7 +1,7 @@
-import EnergyPage from "../components/EnergyPage";
+import PageLayout from "../components/PageLayout";
 
-const Wind = () => (
-  <EnergyPage
+const Coffee = () => (
+  <PageLayout
     title="Wind Energy"
     imageSrc="https://upload.wikimedia.org/wikipedia/commons/e/e0/Wind_power_plants_in_Xinjiang%2C_China.jpg"
     description="Wind power is the use of wind energy to generate useful work. Historically, wind power was used by 
@@ -33,4 +33,4 @@ const Wind = () => (
   />
 );
 
-export default Wind;
+export default Coffee;

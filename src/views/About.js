@@ -1,7 +1,7 @@
-import EnergyPage from "../components/EnergyPage";
+import PageLayout from "../components/PageLayout";
 
-const Solar = () => (
-    <EnergyPage
+const About = () => (
+    <PageLayout
       title="Solar Energy"
       imageSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Electrical_and_Mechanical_Services_Department_Headquarters_Photovoltaics.jpg/800px-Electrical_and_Mechanical_Services_Department_Headquarters_Photovoltaics.jpg"
       description="Solar power, also known as solar electricity, is the conversion of energy from sunlight into 
@@ -32,4 +32,4 @@ const Solar = () => (
     />
 );
 
-export default Solar;
+export default About;
