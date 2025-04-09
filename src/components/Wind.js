@@ -1,22 +1,45 @@
-//Wind.js
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid } from "recharts";
 
+const Solar = () => {
+  const [data, setData] = useState([]);
 
-// Import React library
-import React from 'react'; 
- 
-function Wind() {
+  useEffect(() => {
+    const fetchData = async () => {
+        try {      
+          const apiUrl = `https://www.renewables.ninja/api/countries/IE?token=6cdbe1a474b9b25d3527fa18f508be6d8577ecb9`;
+      
+          const response = await axios.get(apiUrl);
+          const json = response.data;
+          console.log("API Response:", json); // Log the response for debugging
+      
+          // Format the data for the chart
+          const formattedData = json.data.map((item) => ({
+            date: item.date,
+            wind_generation: item.wind_generation,
+          }));
+          setData(formattedData);
+        } catch (error) {
+          console.error("Error fetching wind data:", error);
+        }
+      };
+
+    fetchData();
+  }, []);
+
   return (
-    <div>
-      <h1>Wind Energy</h1> {/* h1 Heading */}
-
-      <img src="https://static.wixstatic.com/media/dcb342_ba92404ea2204c0388f56316ba6a34a6~mv2.jpg" alt="Renewable Energy Sources" />{/* Image */}
-      <p>Wind Energy: Wind turbines convert the kinetic energy from wind into mechanical power, which can then be converted into electricity. 
-        Wind energy is one of the most efficient and cost-effective renewable energy sources available today. </p> {/* Description */}
+    <div className="page">
+      <h2>Wind Energy Generation in Ireland</h2>
+      <LineChart width={600} height={300} data={data}>
+        <CartesianGrid stroke="#ccc" />
+        <XAxis dataKey="date" />
+        <YAxis />
+        <Tooltip />
+        <Line type="monotone" dataKey="wind_generation" stroke="#82ca9d" />
+      </LineChart>
     </div>
   );
-}
- 
+};
 
-
-// Exporting Wind component as default
-export default Wind; 
+export default Wind;

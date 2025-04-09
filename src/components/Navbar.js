@@ -1,50 +1,20 @@
-// Import React library
-
-//import React from 'react';
-
- 
-
-// Importing Link component from react-router-dom for navigation
-
-import { Link } from 'react-router-dom';
-
- 
+import { Link } from "react-router-dom";
 
 function Navbar() {
-
-  return (
-
-    <div>
-      
-      <nav> {/* Navigation bar */}
-
-      <ul> {/* Unordered list for navigation links */}
-
-        <li><Link to="/">Home</Link></li> {/* Link to Home page */}
-
-        <li><Link to="/wind">Wind</Link></li> {/* Link to Wind page */}
-
-        <li><Link to="/solar">Solar</Link></li> {/* Link to Solar page */}
-
-        <li><Link to="/hydro">Hydro</Link></li> {/* Link to Hydro page */}
-
-        <li><Link to="/wave">Wave</Link></li> {/* Link to Wave page */}
-
-        <li><Link to="/contact">Contact</Link></li> {/* Link to Contact page */}
-
-      </ul>
-
-    </nav>
-
-  </div>
-
-  );
-
+    return (
+        <div>
+        <nav>
+            <Link to="/"><img rel src="../../energy-information-high-resolution-logo-transparent.png" alt="Sustainable Energy Logo" className="logo"/></Link>
+            <br></br>
+            <Link to="/"><h4>Home</h4></Link>
+            <Link to="/solar"><h4>Solar</h4></Link>
+            <Link to="/wind"><h4>Wind</h4></Link>
+            <Link to="/geothermal"><h4>Geothermal</h4></Link>
+            <Link to="/fusion"><h4>Fusion</h4></Link>
+            <Link to="/contact"><h4>Contact</h4></Link>
+        </nav>
+        </div>
+    )
 }
 
- 
-
-// Export Navbar component as default
-
 export default Navbar;
-

@@ -1,117 +1,36 @@
-
-
- 
-
-// Import components from react-router-dom for routing
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
- 
-// Import Navbar component
-
-import Navbar from './components/Navbar';
-
-
-// Import Home component
-
-import Home from './components/Home';
-
- 
-
-
-
- 
-
-// Import Wind component
-
-import Wind from './components/Wind';
-
- 
-
-// Import Solar component
-
-import Solar from './components/Solar';
-
- 
-
-// Import Hydro component
-
-import Hydro from './components/Hydro';
-
- 
-
-// Import Wave component
-
-import Wave from './components/Wave';
-
- 
-
-// Import Contact component
-
-import Contact from './components/Contact';
-
- 
-
-// Import external CSS file
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from "./components/Navbar";
 import './App.css';
+import Home from './views/Home';
+import Solar from './views/Solar';
+import Wind from './views/Wind';
+import Geothermal from './views/Geothermal';
+import Fusion from './views/Fusion';
+import Contact from './views/Contact';
+import Footer from './components/Footer';
 
- 
-
-function App() {
+const App = () => {
 
   return (
-
-    // Wrap application in Router to enable routing
-
-
-    <div>
-    
     <Router>
-Hi 
-      
+      <header>
+        <Navbar></Navbar>
+      </header>
 
-        {/* Include Navbar component */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/solar" element={<Solar />} />
+        <Route path="/wind" element={<Wind />} />
+        <Route path="/geothermal" element={<Geothermal />} />
+        <Route path="/fusion" element={<Fusion />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
 
-        <Navbar />
-        
-
-        <Home />
-        
-
-        <Routes>
-
-          {/* Set up routes for the Home Page and five linked components */}
-
-          <Route path="/" element={<Home />} />
-
-          <Route path="/wind" element={<Wind />} />
-
-          <Route path="/solar" element={<Solar />} />
-
-          <Route path="/hydro" element={<Hydro />} />
-
-          <Route path="/wave" element={<Wave />} />
-
-          <Route path="/contact" element={<Contact />} />
-
-        </Routes>
-
-     
-
+      <footer>
+        <Footer></Footer>
+      </footer>
     </Router>
-
-    </div>
-
-
-
   );
-
-}
-
- 
-
-// Export App component as default
+};
 
 export default App;
-
