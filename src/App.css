@@ -21,7 +21,8 @@ nav {
   padding-top: 10px;
   padding-bottom: 10px;
   background: #563517;
-  padding-left: 25%;
+  margin: auto;
+  padding-left: 15%;
 }
 
 footer {
@@ -47,7 +48,7 @@ nav h4 {
 }
 
 .page {
-  padding: 50px;
+  padding-top: 50px;
 }
 
 img.logo {
