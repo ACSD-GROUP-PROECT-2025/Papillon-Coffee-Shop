@@ -9,10 +9,6 @@ const PageLayout = ({ title, imageSrc, description, sourceLink }) => {
       <br />
       <div class="description" dangerouslySetInnerHTML={{ __html: description }} />
       <p style={{ textAlign: "right" }}>
-        <i>Source: </i>
-        <a href={sourceLink} target="_blank" rel="noopener noreferrer">
-          <i>{sourceLink}</i>
-        </a>
       </p>
     </div>
   );
