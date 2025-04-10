@@ -1,18 +1,21 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom"; // Change from Link to NavLink
 
 function Navbar() {
     return (
-        <div>
-        <nav>
-            <Link to="/"><img rel src="../../Papillon_Cafe_Logo.png" alt="Papillon Cafe Logo" className="logo"/></Link>
-            <br></br>
-            <Link to="/"><h4>Home</h4></Link>
-            <Link to="/about"><h4>About</h4></Link>
-            <Link to="/coffee"><h4>Our Coffee</h4></Link>
-            <Link to="/menu"><h4>Menu</h4></Link>
-            <Link to="/findus"><h4>Find us</h4></Link>
-            <Link to="/contact"><h4>Contact</h4></Link>
-        </nav>
+        <div className="navbar-container">
+            <nav>
+                
+                <div className="nav-links"><NavLink to="/" end>
+                    <img src="../../Papillon_Cafe_Logo.png" alt="Papillon Cafe Logo" className="logo"/>
+                </NavLink>
+                    <NavLink to="/" end><h4>Home</h4></NavLink>
+                    <NavLink to="/about"><h4>About</h4></NavLink>
+                    <NavLink to="/coffee"><h4>Our Coffee</h4></NavLink>
+                    <NavLink to="/menu"><h4>Menu</h4></NavLink>
+                    <NavLink to="/findus"><h4>Find us</h4></NavLink>
+                    <NavLink to="/contact"><h4>Contact</h4></NavLink>
+                </div>
+            </nav>
         </div>
     )
 }

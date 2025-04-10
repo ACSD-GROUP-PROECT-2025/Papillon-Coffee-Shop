@@ -15,22 +15,67 @@ h2 {
   text-align: center !important;
 }
 
+.navbar-container {
+  width: 100%;
+  background: #6F4E37;
+}
+
 nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.nav-links {
   display: flex;
   gap: 25px;
   padding-top: 10px;
-  padding-bottom: 10px;
-  background: #6F4E37;
-  margin: auto;
-  padding-left: 15%;
+  align-items: center;
 }
 
-footer {
-  gap: 25px;
-  background: #3E2723;
+/* Hover Effect */
+nav a:hover h4 {
+  color: #E6D5B8;
+  border-bottom: 2px solid #C4A484;
+  padding-bottom: 2px;
+}
+
+
+nav a.active h4 {
+  color: #E6D5B8;
+}
+
+.site-footer {
+  background-color: #3E2723;
+  color: #E6D5B8;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.footer-row {
   display: flex;
-  flex-direction: column;
-  margin-bottom: -10px;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-item {
+  text-align: center;
+}
+
+.site-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
 }
 
 nav a {
@@ -43,13 +88,8 @@ footer a {
   text-decoration: none;
 }
 
-nav h4 {
-  padding-left: 10px;
-  background: #6F4E37;
-}
-
-footer h4 {
-  padding-left: 10px;
+footer h4:not(a h4) {
+  color: #6F4E37;
 }
 
 .page {
@@ -82,38 +122,48 @@ div.description {
   padding-bottom: 15px;
 }
 
+p {
+  color: #6F4E37 !important;
+}
+
 h1 {
   width: 60%;
   margin: auto;
   padding-bottom: 15px;
-  color: #3E2723;
+  color: #6F4E37;
 }
 
 h2 {
   width: 60%;
   margin: auto;
   padding-bottom: 15px;
-  color: #3E2723;
+  color: #6F4E37;
 }
 
 h3 {
   width: 60%;
   margin: auto;
-  color: #3E2723;
+  color: #6F4E37;
+}
+
+h3 {
+  width: 60%;
+  margin: auto;
+  color: #6F4E37;
 }
 
 h5 {
   width: 60%;
   margin: auto;
   padding-bottom: 15px;
-  color: #3E2723;
+  color: #6F4E37;
 }
 
 h6 {
   width: 60%;
   margin: auto;
   padding-bottom: 15px;
-  color: #3E2723;
+  color: #6F4E37;
 }
 
 div.recharts-responsive-container {
