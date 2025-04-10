@@ -36,13 +36,11 @@ nav {
   align-items: center;
 }
 
-/* Hover Effect */
 nav a:hover h4 {
   color: #E6D5B8;
   border-bottom: 2px solid #C4A484;
   padding-bottom: 2px;
 }
-
 
 nav a.active h4 {
   color: #E6D5B8;
@@ -112,8 +110,10 @@ footer {
 }
 
 form {
-  width: 50%;
+  width: auto;
   margin: auto;
+  align-items: center;
+  margin-left: 30%;
 }
 
 div.description {
@@ -127,55 +127,49 @@ p {
 }
 
 h1 {
-  width: 60%;
+  width: 100%;
   margin: auto;
   padding-bottom: 15px;
-  color: #6F4E37;
+  color: #6F4E37 !important;
 }
 
 h2 {
-  width: 60%;
+  width: 100%;
   margin: auto;
   padding-bottom: 15px;
-  color: #6F4E37;
+  color: #6F4E37 !important;
 }
 
 h3 {
-  width: 60%;
+  width: 100%;
   margin: auto;
-  color: #6F4E37;
+  color: #6F4E37 !important;
 }
 
 h3 {
-  width: 60%;
+  width: 100%;
   margin: auto;
-  color: #6F4E37;
+  color: #6F4E37 !important;
 }
 
 h5 {
-  width: 60%;
+  width: 100%;
   margin: auto;
   padding-bottom: 15px;
   color: #6F4E37;
 }
 
 h6 {
-  width: 60%;
+  width: 100%;
   margin: auto;
   padding-bottom: 15px;
   color: #6F4E37;
 }
 
-div.recharts-responsive-container {
-  margin: auto;
-}
-
 p {
-  width: 60%;
+  width: 100%;
   margin: auto;
   padding-bottom: 40px;
-  padding-top: 50px;
-  color: #3E2723;
 }
 
 input, textarea {

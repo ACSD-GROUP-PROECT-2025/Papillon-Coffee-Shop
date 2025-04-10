@@ -1,34 +1,32 @@
-import PageLayout from "../components/PageLayout";
+import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
-const Findus = () => (
-  <PageLayout
-    title="Fusion Energy"
-    imageSrc="https://upload.wikimedia.org/wikipedia/commons/e/ed/Preamplifier_at_the_National_Ignition_Facility.jpg"
-    description="Fusion power is a proposed form of power generation that would generate electricity by using heat 
-        from nuclear fusion reactions. In a fusion process, two lighter atomic nuclei combine to form a 
-        heavier nucleus, while releasing energy. Devices designed to harness this energy are known as fusion 
-        reactors. Research into fusion reactors began in the 1940s, but as of 2024, no device has reached net 
-        power, although net positive reactions have been achieved.
-         <br></br>
-        Fusion processes require fuel, in a state of plasma, and a confined environment with sufficient temperature, 
-        pressure, and confinement time. The combination of these parameters that results in a power-producing system 
-        is known as the Lawson criterion. In stellar cores the most common fuel is the lightest isotope of hydrogen 
-        (protium), and gravity provides the conditions needed for fusion energy production. Proposed fusion reactors 
-        would use the heavy hydrogen isotopes of deuterium and tritium for DT fusion, for which the Lawson criterion 
-        is known to be easiest to achieve. This produces a helium nucleus and an energetic neutron. Most designs 
-        aim to heat their fuel to around 100 million kelvins, which presents a major challenge in producing a 
-        successful design. Fusion fuel is 10 million times more energy dense than coal, but tritium is extremely 
-        rare on Earth, having a half life of only ~12.3 years. Consequently, during the operation of envisioned fusion 
-        reactors, breeding blankets are subjected to neutron fluxes to generate tritium to complete the fuel cycle.
-         <br></br>
-        As a source of power, nuclear fusion has a number of potential advantages compared to fission. These include 
-        little high-level waste, and increased safety. However, the necessary combination of temperature, pressure, 
-        and duration has proven to be difficult to produce in a practical and economical manner. A second issue that 
-        affects common reactions is managing resulting neutron radiation, which over time degrade the reaction 
-        chamber, especially the first wall.
-         <br></br>"
-    sourceLink="https://en.wikipedia.org/wiki/Fusion_power"
-  />
-);
+const Findus = () => {
+  const findUs = `
+    <h3>Where Coffee Meets Comfort in the Heart of the City</h3>
+    <p class="marginTop: -60px" >Nestled on bustling Parnell Street, Papillon Café Dublin is your cozy escape for artisanal coffee, fresh pastries, and warm hospitality. Whether you're stopping by for your morning espresso or a leisurely lunch, we can’t wait to welcome you.</p>
+    <h3>Our Address:</h3>
+    <p>192 Parnell Street, Dublin 1, D01 XW18</p>
+    <h3>Need Directions?</h3>
+    <p>Use the interactive map below to plan your visit. We’re just a short walk from the Rotunda Hospital and a 10-minute stroll from O’Connell Street.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.578144735779!2d-6.268318287258041!3d53.35080737217513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670f2929fbfd89%3A0xf330878fcf4522ef!2sPapillon%20Cafe%20Dublin!5e0!3m2!1sen!2sie!4v1744321665601!5m2!1sen!2sie" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  `;
+
+  return (
+    <div className="container d-flex flex-column align-items-center justify-content-center text-center">
+      <h2>Find Papillon Café Dublin</h2>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/7/74/Location_icon_from_Noun_Project.png"
+        alt="Find us"
+        className="img-fluid mb-4"
+        style={{ maxWidth: "400px", marginTop: "-50px" }} 
+      />
+      <div
+        className="description"
+        dangerouslySetInnerHTML={{ __html: findUs }}
+      />
+    </div>
+  );
+};
 
 export default Findus;
