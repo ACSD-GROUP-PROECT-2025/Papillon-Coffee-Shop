@@ -3,7 +3,7 @@ body {
   margin: auto;
   width: 100%;
   padding: 0;
-  background-color: #9c6f44;
+  background-color: #E6D5B8;
   text-align: justify;
 }
 
@@ -20,30 +20,35 @@ nav {
   gap: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background: #563517;
+  background: #6F4E37;
   margin: auto;
   padding-left: 15%;
 }
 
 footer {
   gap: 25px;
-  background: #563517;
+  background: #3E2723;
   display: flex;
   flex-direction: column;
   margin-bottom: -10px;
 }
 
 nav a {
-  color: #9c6f44;
+  color: #C4A484 !important;
   text-decoration: none;
 }
 
 footer a {
-  color: #9c6f44;
+  color: #C4A484 !important;
   text-decoration: none;
 }
 
 nav h4 {
+  padding-left: 10px;
+  background: #6F4E37;
+}
+
+footer h4 {
   padding-left: 10px;
 }
 
@@ -81,29 +86,34 @@ h1 {
   width: 60%;
   margin: auto;
   padding-bottom: 15px;
+  color: #3E2723;
 }
 
 h2 {
   width: 60%;
   margin: auto;
   padding-bottom: 15px;
+  color: #3E2723;
 }
 
 h3 {
   width: 60%;
   margin: auto;
+  color: #3E2723;
 }
 
 h5 {
   width: 60%;
   margin: auto;
   padding-bottom: 15px;
+  color: #3E2723;
 }
 
 h6 {
   width: 60%;
   margin: auto;
   padding-bottom: 15px;
+  color: #3E2723;
 }
 
 div.recharts-responsive-container {
@@ -115,6 +125,7 @@ p {
   margin: auto;
   padding-bottom: 40px;
   padding-top: 50px;
+  color: #3E2723;
 }
 
 input, textarea {
