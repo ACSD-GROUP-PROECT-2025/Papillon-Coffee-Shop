@@ -1,9 +1,10 @@
 import PageLayout from "../components/PageLayout";
+import papillonImage from '../images/papillon.jpg';
 
 const About = () => (
   <PageLayout
     title="About Papillon Cafe"
-    imageSrc="/images/papillon.jpg" 
+    imageSrc={papillonImage}
     description={`Papillon Cafe is a proudly independent takeaway coffee stop located on Dublin’s vibrant Parnell Street. 
       Founded in late 2024 by two friends from Croatia, Papillon was born out of a love for quality coffee, 
       personal connection, and the dream of building something of their own in Ireland.
