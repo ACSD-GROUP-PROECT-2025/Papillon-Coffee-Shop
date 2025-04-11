@@ -1,35 +1,63 @@
 import PageLayout from "../components/PageLayout";
+import papillonImage from '../images/papillon.jpg';
 
 const About = () => (
-    <PageLayout
-      title="Solar Energy"
-      imageSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Electrical_and_Mechanical_Services_Department_Headquarters_Photovoltaics.jpg/800px-Electrical_and_Mechanical_Services_Department_Headquarters_Photovoltaics.jpg"
-      description="Solar power, also known as solar electricity, is the conversion of energy from sunlight into 
-        electricity, either directly using photovoltaics (PV) or indirectly using concentrated solar power. 
-        Solar panels use the photovoltaic effect to convert light into an electric current. Concentrated solar 
-        power systems use lenses or mirrors and solar tracking systems to focus a large area of sunlight to a 
-        hot spot, often to drive a steam turbine.
-        <br></br>
-        Photovoltaics (PV) were initially solely used as a source of electricity for small and medium-sized 
-        applications, from the calculator powered by a single solar cell to remote homes powered by an 
-        off-grid rooftop PV system. Commercial concentrated solar power plants were first developed in the 
-        1980s. Since then, as the cost of solar panels has fallen, grid-connected solar PV systems' capacity 
-        and production has doubled about every three years. Three-quarters of new generation capacity is 
-        solar, with both millions of rooftop installations and gigawatt-scale photovoltaic power stations 
-        continuing to be built.
-        <br></br>
-        In 2023, solar power generated 5.5% (1,631 TWh) of global electricity and over 1% of primary energy, adding 
-        twice as much new electricity as coal. Along with onshore wind power, utility-scale solar is the 
-        source with the cheapest levelised cost of electricity for new installations in most countries. As of 
-        2023, 33 countries generated more than a tenth of their electricity from solar, with China making up 
-        more than half of solar growth. Almost half the solar power installed in 2022 was mounted on rooftops.
-        <br></br>
-        Much more low-carbon power is needed for electrification and to limit climate change. The International
-        Energy Agency said in 2022 that more effort was needed for grid integration and the mitigation of 
-        policy, regulation and financing challenges. Nevertheless solar may greatly cut the cost of energy.
-         <br></br>"
-      sourceLink="https://en.wikipedia.org/wiki/Solar_power"
-    />
+  <PageLayout
+    title="About Papillon Cafe"
+    imageSrc={papillonImage}
+    description={`Papillon Cafe is a proudly independent takeaway coffee stop located on Dublin’s vibrant Parnell Street. 
+      Founded in late 2024 by two friends from Croatia, Papillon was born out of a love for quality coffee, 
+      personal connection, and the dream of building something of their own in Ireland.
+
+      <br /><br />
+      <strong>🌱 Mission & Brand</strong><br />
+      At Papillon Cafe, we believe great coffee creates great connections. Our mission is to offer high-quality takeaway coffee 
+      with a personal touch — blending Croatian hospitality with Dublin energy. We aim to build warm, welcoming spaces that 
+      celebrate culture, simplicity, and community.
+
+      <br /><br />
+      <strong>🎯 Skills & Capabilities</strong><br />
+      - Trained baristas skilled in specialty coffee preparation<br />
+      - Stand-out branding and interior design<br />
+      - Fast, friendly, and personal customer service<br />
+      - Efficient takeaway model for high-traffic areas<br />
+      - Active local marketing and strong word-of-mouth traction
+
+      <br /><br />
+      <strong>📋 Business Snapshot</strong><br />
+      - <strong>Name:</strong> Papillon Cafe<br />
+      - <strong>Type:</strong> Takeaway Coffee Shop<br />
+      - <strong>Founded:</strong> 2024<br />
+      - <strong>Founders:</strong> Two Croatian entrepreneurs living in Dublin since 2021<br />
+      - <strong>Location:</strong> Parnell Street, Dublin<br />
+      - <strong>Team:</strong> 2 full-time operators, 1 part-time staff
+
+      <br /><br />
+      <strong>🚀 Future Plans</strong><br />
+      This is just the beginning. Plans are underway to:<br />
+      - Open a second takeaway location in 2025<br />
+      - Launch a mobile coffee cart for events and markets<br />
+      - Develop a branded product line including reusable cups and packaged beans
+
+      <br /><br />
+      <strong>🏆 Achievements</strong><br />
+      - Launched successfully within 6 months of planning<br />
+      - Reached break-even point in under 3 months<br />
+      - Built all branding, shop layout, and systems independently<br />
+
+      <br /><br />
+      <strong>🎓 Training & Staff</strong><br />
+      Founders trained with local barista professionals and emphasize ongoing development, including:<br />
+      - Latte art<br />
+      - Speed and efficiency<br />
+      - Customer care and feedback handling
+
+      <br /><br />
+      <strong>📣 Recognitions</strong><br />
+      - Nominated for local “Best New Cafe” award (2025)<br />
+      - Collaborations with local creatives and independent artists<br />
+    `}
+  />
 );
 
 export default About;
