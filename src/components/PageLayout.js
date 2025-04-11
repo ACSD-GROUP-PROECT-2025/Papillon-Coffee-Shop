@@ -4,7 +4,7 @@ const PageLayout = ({ title, imageSrc, description, sourceLink }) => {
   return (
     <div className="page">
       <h2>{title}</h2>
-      <img src={imageSrc} alt={title} />
+      <img src={imageSrc} alt={title} className="image"/>
       <br />
       <br />
       <div class="description" dangerouslySetInnerHTML={{ __html: description }} />
