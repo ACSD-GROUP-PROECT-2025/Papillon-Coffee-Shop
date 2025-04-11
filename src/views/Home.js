@@ -3,17 +3,48 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 const Home = () => {
   const home = `
-    <p>Welcome to <b>EnergyInformation.net</b>, where we explore innovative technologies that harness clean, 
-        renewable energy. As the demand for energy grows, the need for sustainable and renewable sources has never 
-        been more urgent. Through innovation and cutting-edge research, we can reduce our dependence on fossil 
-        fuels and embrace cleaner alternatives that protect our planet for future generations.
-        <br></br><br></br>
-        On this platform, you’ll discover a range of energy solutions—from the proven power of solar and wind 
-        to emerging technologies like geothermal and fusion energy. Each solution holds the potential to 
-        transform how we produce and consume energy while reducing environmental impact.
-        <br></br><br></br>
-        Join us on this journey to understand these exciting advancements and how they can lead us toward a 
-        more sustainable future. Explore, learn, and be part of the change!</p>
+
+  <h1> Welcome to Papillon Coffee Shop  Your Dublin Escape,/h1>
+
+    <p>Nestled in the heart of historic Parnell Square, Papillon Coffee Shop is your perfect stop
+     for a comforting cup of coffee, a delightful pastry, and a moment of relaxation away from 
+     the city's bustle. Whether you're exploring Dublin's rich culture or simply seeking 
+     a peaceful retreat, we have got you covered.
+      </p>
+      <p>Why Papillon?
+          Authentic Dublin Charm  
+          Immerse yourself in the warmth of Irish hospitality with every sip.
+
+          Locally-Sourced Goodness  
+          We proudly serve the finest Irish coffee blends and homemade treats.
+
+          Cozy & Inviting Atmosphere  
+          Take a break from sightseeing in our stylish yet comfortable cafe.
+          </p>
+
+    <p>Just a Stroll Away
+        Papillon sits in Parnell Square, a hub of culture and history. While you're here, 
+        explore some of Dublins top attractions: 
+        
+        The Hugh Lane Gallery 
+        Discover masterpieces and contemporary art just minutes away. 
+        The Dublin Writers Museum 
+        Dive into Irelands literary legacy and the minds behind the classics. 
+         
+        The Garden of Remembrance 
+        A tranquil spot to reflect on Irelands history.
+    </p>
+
+
+
+  <p> Join Us for a Taste of Dublin
+      Whether you're visiting for the day or making Dublin your home, 
+      Papillon Coffee Shop invites you to experience a perfect brew, a cozy seat, 
+      and a moment to unwind.
+
+    Visit us today and let Dublins magic unfold one cup at a time. </p>
+
+
   `;
 
   return (
