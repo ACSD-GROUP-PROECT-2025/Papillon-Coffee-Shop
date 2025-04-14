@@ -122,8 +122,8 @@ nav {
   nav a:hover h4 {
     color: #E6D5B8;
     border-bottom: 2px solid #C4A484;
-    margin-bottom: 5px; /* Counteract the border */
-    padding-bottom: 0; /* Remove padding-bottom */
+    margin-bottom: 5px;
+    padding-bottom: 0;
   }
 }
 
@@ -279,6 +279,39 @@ ul.list-group.list-group-flush{
   background-color: #C4A484;
   margin: 10px;
   border-radius: 8px;
+}
+
+@media (max-width: 782px) {
+
+.columnx2 {
+  flex: 90%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: justify;
+  background-color: #C4A484;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.columnx3 {
+  flex: 90%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: justify;
+  background-color: #C4A484;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.columnx4 {
+  flex: 90%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: justify;
+  background-color: #C4A484;
+  margin: 10px;
+  border-radius: 8px;
+}
 }
 
 p {
