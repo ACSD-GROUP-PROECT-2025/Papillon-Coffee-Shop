@@ -192,9 +192,19 @@ footer {
 }
 
 form {
-  width: 100% !important;
+  width: 80% !important;
   margin: auto;
   align-items: center;
+}
+
+form.w-100 {
+  width: 80% !important;
+  max-width: 650px;
+}
+
+label.form-label {
+  display: flow !important;
+  text-align: left !important;
 }
 
 .button {
@@ -216,7 +226,7 @@ form {
 }
 
 div.description {
-  width: 80%;
+  width: 75%;
   margin: auto;
   padding-bottom: 15px;
 }
