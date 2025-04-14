@@ -58,14 +58,14 @@ const Contact = () => {
     <div className="container d-flex flex-column align-items-center justify-content-center text-center">
       <h2>Get in Touch – Let's Brew Some Conversation!</h2>
       
-      <div className="description w-100">
+      <div className="description w-80">
         <p>At Papillon Café, we believe the best connections start over coffee — whether you want to share your latest coffee obsession, spill the beans, or just want to perk our ears.
         <br/><br/>
-        Drop us a message below, and we'll get back to you faster than a pour-over drips. <br/>(Okay, maybe not that fast, but we promise no one here sleeps on emails — too much espresso, you see.)</p>
+        Drop us a message below!</p>
         
         {submitStatus === 'success' && (
           <div className="alert alert-success">
-            Thank you! Your message has been sent successfully. We'll get back to you soon!
+            Thank you! Your message has been sent successfully. We'll get back to you faster than a pour-over drips. <br/>(Okay, maybe not that fast, but we promise no one here sleeps on emails — too much espresso, you see.)
           </div>
         )}
         
