@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 const Home = () => {
   const home = `
 
-  <h1> Welcome to Papillon Coffee Shop  Your Dublin Escape</h1>
+  <h3>Your Dublin Escape</h3>
 
     <p>Nestled in the heart of historic Parnell Square, Papillon Coffee Shop is your perfect stop
      for a comforting cup of coffee, a delightful pastry, and a moment of relaxation away from 
@@ -49,10 +49,10 @@ const Home = () => {
 
   return (
     <div className="container d-flex flex-column align-items-center justify-content-center text-center">
-      <h2>Welcome to Energy Information</h2>
+      <h2>Welcome to Papillon Coffee Shop</h2>
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/6/64/ENERNOVARE_2.png" 
-        alt="Energy on Earth"
+        src="../../Papillon_Cafe_Logo.png" 
+        alt="Papillon Cafe Logo"
         className="img-fluid mb-4"
         style={{ maxWidth: "400px"}} 
       />
