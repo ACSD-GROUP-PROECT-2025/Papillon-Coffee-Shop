@@ -4,15 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 const Home = () => {
   const home = `
 
-  <h1> Welcome to Papillon Coffee Shop  Your Dublin Escape,/h1>
+  <h1> Welcome to Papillon Coffee Shop  Your Dublin Escape</h1>
 
     <p>Nestled in the heart of historic Parnell Square, Papillon Coffee Shop is your perfect stop
      for a comforting cup of coffee, a delightful pastry, and a moment of relaxation away from 
      the city's bustle. Whether you're exploring Dublin's rich culture or simply seeking 
      a peaceful retreat, we have got you covered.
       </p>
-      <p>Why Papillon?
-          Authentic Dublin Charm  
+      <h3>Why Papillon?</h3>
+          <p>Authentic Dublin Charm  
           Immerse yourself in the warmth of Irish hospitality with every sip.
 
           Locally-Sourced Goodness  
@@ -22,8 +22,8 @@ const Home = () => {
           Take a break from sightseeing in our stylish yet comfortable cafe.
           </p>
 
-    <p>Just a Stroll Away
-        Papillon sits in Parnell Square, a hub of culture and history. While you're here, 
+    <h3>Just a Stroll Away</h3>
+        <p>Papillon sits in Parnell Square, a hub of culture and history. While you're here, 
         explore some of Dublins top attractions: 
         
         The Hugh Lane Gallery 
