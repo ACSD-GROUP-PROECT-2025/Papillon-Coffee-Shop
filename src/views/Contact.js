@@ -56,12 +56,15 @@ const Contact = () => {
 
   return (
     <div className="container d-flex flex-column align-items-center justify-content-center text-center">
-      <h2>Get in Touch – Let's Brew Some Conversation!</h2>
+      <h2>Get in Touch</h2>
       
+      <div class="row">
+      <div class="columnx1">
+      <h4>Let's Brew Some Conversation!</h4>
       <div className="description w-80">
-        <p>At Papillon Café, we believe the best connections start over coffee — whether you want to share your latest coffee obsession, spill the beans, or just want to perk our ears.
+        At Papillon Café, we believe the best connections start over coffee — whether you want to share your latest coffee obsession, spill the beans, or just want to perk our ears.
         <br/><br/>
-        Drop us a message below!</p>
+        Drop us a message below!
         
         {submitStatus === 'success' && (
           <div className="alert alert-success">
@@ -74,7 +77,8 @@ const Contact = () => {
             Oops! Something went wrong while sending your message. Please try again later.
           </div>
         )}
-        
+        </div></div>
+        <div class="columnx1">
         <form onSubmit={handleSubmit} className="w-100">
           <div className="mb-3">
             <label htmlFor="name" className="form-label"><b>Name:</b></label>
@@ -130,7 +134,9 @@ const Contact = () => {
               </>
             ) : 'Send'}
           </button>
+          <br></br><br></br>
         </form>
+        </div>
       </div>
     </div>
   );
