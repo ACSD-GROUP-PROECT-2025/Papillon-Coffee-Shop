@@ -192,9 +192,19 @@ footer {
 }
 
 form {
-  width: 100% !important;
+  width: 80% !important;
   margin: auto;
   align-items: center;
+}
+
+form.w-100 {
+  width: 80% !important;
+  max-width: 650px;
+}
+
+label.form-label {
+  display: flow !important;
+  text-align: left !important;
 }
 
 .button {
@@ -216,7 +226,7 @@ form {
 }
 
 div.description {
-  width: 80%;
+  width: 75%;
   margin: auto;
   padding-bottom: 15px;
 }
@@ -230,7 +240,7 @@ h1 {
   margin: auto;
   padding-bottom: 15px;
   color: #6F4E37 !important;
-  padding-top: 25px;
+  padding-top: 35px;
 }
 
 h2 {
@@ -238,7 +248,7 @@ h2 {
   margin: auto;
   padding-bottom: 15px;
   color: #6F4E37 !important;
-  padding-top: 25px;
+  padding-top: 35px;
 }
 
 h3 {

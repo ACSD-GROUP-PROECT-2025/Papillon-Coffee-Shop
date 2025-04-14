@@ -49,7 +49,7 @@ const Home = () => {
 
   return (
     <div className="container d-flex flex-column align-items-center justify-content-center text-center">
-      <h2>Welcome to Papillon Coffee Shop</h2>
+      <h1>Welcome to Papillon Coffee Shop</h1>
       <img
         src="../../Papillon_Cafe_Logo.png" 
         alt="Papillon Cafe Logo"
