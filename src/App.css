@@ -172,6 +172,16 @@ footer a {
   text-decoration: none;
 }
 
+a {
+  color: #3E2723 !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6F4E37 !important;
+  text-decoration: none;
+}
+
 footer h4:not(a h4) {
   color: #6F4E37;
 }
