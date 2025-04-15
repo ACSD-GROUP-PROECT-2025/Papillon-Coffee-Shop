@@ -2,11 +2,10 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 const Menu = () => {
-  const menuDescription = ``;
 
   return (
     <div className="container d-flex flex-column align-items-center justify-content-center text-center">
-      <h2>Coffee Menu</h2>
+      <h2>Menu</h2>
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG"
         alt="Coffee"
@@ -27,23 +26,40 @@ const Menu = () => {
       <li class="list-group-item">Dirty Chai Latte – €4.50</li>
       <li class="list-group-item">Hot Chocolate – €3.80</li>
       <li class="list-group-item">Matcha – €4.00</li>
+      <br></br>
+      <br></br>
+      <h3>🥤 Cold Drinks</h3>
+      <ul class="list-group list-group-flush">
+      <li class="list-group-item">Coca Cola – €2.90</li>
+      <li class="list-group-item">Sprite – €2.90</li>
+      <li class="list-group-item">San Pellegrino – €2.90</li>
+      <li class="list-group-item">Fanta – €2.90</li>
+      <li class="list-group-item">Mineral Water – €2.50</li>
+    </ul>
+    
     </ul>
     </div>
     <div class="columnx2">
-    <h3>🥤 Cold Drinks</h3>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Coca Cola / Sprite / San Pellegrino / Fanta – €2.90</li>
-      <li class="list-group-item">Mineral Water – €2.50</li>
-    </ul>
     <h3>🍰 Sweets</h3>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">Cake (Chocolate, Lemon, Carrot, Toffee) – €3.90</li>
-      <li class="list-group-item">Pastry (Cinnamon bun, Croissants, Caramel bites, Baklava) – €3.30</li>
-    </ul>
-    <h3>🥪 Food</h3>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Toastie Sandwich (Chicken/Bacon, Tuna Melt, Ham/Cheese, Triple Cheese) – €4.50</li>
-      <li class="list-group-item">Hot Dog – €4.50</li>
+      <li class="list-group-item">Chocolate Cake – €3.90</li>
+      <li class="list-group-item">Lemon Cake – €3.90</li>
+      <li class="list-group-item">Carrot Cake – €3.90</li>
+      <li class="list-group-item">Toffee Cake – €3.90</li>
+      <li class="list-group-item">Cinnamon bun Pastry – €3.30</li>
+      <li class="list-group-item">Croissants Pastry – €3.30</li>
+      <li class="list-group-item">Caramel bites Pastry – €3.30</li>
+      <li class="list-group-item">Baklava Pastry – €3.30</li>
+      </ul>
+      <br></br>
+      <br></br>
+      <h3>🥪 Food</h3>
+      <ul class="list-group list-group-flush">
+      <li class="list-group-item">Chicken & Bacon Toastie – €4.50</li>
+      <li class="list-group-item">Tuna Melt Toastie – €4.50</li>
+      <li class="list-group-item">Ham & Cheese Toastie – €4.50</li>
+      <li class="list-group-item">Triple Cheese Toastie – €4.50</li>
+       <li class="list-group-item">Hot Dog – €4.50</li>
     </ul>
     </div>
     <div class="columnx1">
@@ -55,10 +71,6 @@ const Menu = () => {
     </ul>
         </div>
         </div>
-      <div
-        className="description"
-        dangerouslySetInnerHTML={{ __html: menuDescription }}
-      />
     </div>
   );
 };

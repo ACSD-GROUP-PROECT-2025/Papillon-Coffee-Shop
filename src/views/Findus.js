@@ -14,7 +14,7 @@ const Findus = () => {
         src="https://upload.wikimedia.org/wikipedia/commons/7/74/Location_icon_from_Noun_Project.png"
         alt="Find us"
         className="img-fluid mb-4"
-        style={{ maxWidth: "400px", marginTop: "-80px" }} 
+        style={{ maxWidth: "400px", marginTop: "-55px" }} 
       />
       <div class="row">
       <div class="columnx1">

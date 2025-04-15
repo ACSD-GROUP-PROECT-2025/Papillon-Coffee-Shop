@@ -22,14 +22,14 @@ const About = () => {
       </div>
 
       <div class="columnx2">
-      <strong>🌱 Mission & Brand</strong><br />
+      <h3>🌱 Mission & Brand</h3><br />
       At Papillon Cafe, we believe great coffee creates great connections. Our mission is to offer high-quality takeaway coffee 
       with a personal touch — blending Croatian hospitality with Dublin energy. We aim to build warm, welcoming spaces that 
       celebrate culture, simplicity, and community.
       </div>
 
       <div class="columnx2">
-      <strong>🎯 Skills & Capabilities</strong><br />
+      <h3>🎯 Skills & Capabilities</h3><br />
       - Trained baristas skilled in specialty coffee preparation<br />
       - Stand-out branding and interior design<br />
       - Fast, friendly, and personal customer service<br />
@@ -38,7 +38,7 @@ const About = () => {
       </div>
 
       <div class="columnx2">
-      <strong>📋 Business Snapshot</strong><br />
+      <h3>📋 Business Snapshot</h3><br />
       - <strong>Name:</strong> Papillon Cafe<br />
       - <strong>Type:</strong> Takeaway Coffee Shop<br />
       - <strong>Founded:</strong> 2024<br />
@@ -48,32 +48,33 @@ const About = () => {
       </div>
 
       <div class="columnx2">
-      <strong>🚀 Future Plans</strong><br />
+      <h3>🚀 Future Plans</h3><br />
       This is just the beginning. Plans are underway to:<br />
       - Open a second takeaway location in 2025<br />
       - Launch a mobile coffee cart for events and markets<br />
       - Develop a branded product line including reusable cups and packaged beans
       </div>
 
-      <div class="columnx3">
-      <strong>🏆 Achievements</strong><br />
-      - Launched successfully within 6 months of planning<br />
-      - Reached break-even point in under 3 months<br />
-      - Built all branding, shop layout, and systems independently<br />
-      </div>
-
-      <div class="columnx3">
-      <strong>🎓 Training & Staff</strong><br />
+      <div class="columnx2">
+      <h3>🎓 Training & Staff</h3><br />
       Founders trained with local barista professionals and emphasize ongoing development, including:<br />
       - Latte art<br />
       - Speed and efficiency<br />
       - Customer care and feedback handling
       </div>
       
-      <div class="columnx3">
-      <strong>📣 Recognitions</strong><br />
+      <div class="columnx2">
+      <h3>📣 Recognitions</h3><br />
       - Nominated for local “Best New Cafe” award (2025)<br />
       - Collaborations with local creatives and independent artists<br />
+      </div>
+
+      <div class="columnx1">
+      <h3>🏆 Achievements</h3><br />
+      - Launched successfully within 6 months of planning<br />
+      - Reached break-even point in under 3 months<br />
+      - Built all branding, shop layout, and systems independently<br />
+      <br></br>
       </div>
       <div/>
     </div>
