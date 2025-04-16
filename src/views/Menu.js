@@ -128,7 +128,7 @@ const Menu = () => {
       />
 
       <div className="row w-100">
-        <div className="col-md-6">
+        <div className="col-md-4">
           <h3>☕ Coffee</h3>
           <ul className="list-group list-group-flush">
             {menuItems.coffee.map((item, index) => (
@@ -162,6 +162,9 @@ const Menu = () => {
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="col-md-4">
 
           <h3>🍰 Sweets</h3>
           <ul className="list-group list-group-flush">
@@ -198,7 +201,7 @@ const Menu = () => {
           </ul>
         </div>
 
-        <div className="col-md-6">
+        <div className="col-md-4">
           <h3>🔥 Promotions</h3>
           <ul className="list-group list-group-flush">
             {menuItems.promotions.map((item, index) => (
