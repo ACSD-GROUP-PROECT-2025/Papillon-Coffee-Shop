@@ -120,22 +120,6 @@ const Menu = () => {
     <div className="container d-flex flex-column align-items-center justify-content-center text-center">
       <h2>Menu</h2>
 
-      {isLoggedIn ? (
-        <>
-          <h4>Welcome, {userName}!</h4>
-          <button onClick={handleLogout} className="btn btn-danger mb-4">
-            Log Out
-          </button>
-        </>
-      ) : (
-        <form onSubmit={handleLoginSubmit} className="mb-4">
-          <input type="text" name="username" placeholder="Enter your name" required />
-          <button type="submit" className="btn btn-primary">
-            Log In
-          </button>
-        </form>
-      )}
-
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG"
         alt="Coffee"
@@ -233,6 +217,23 @@ const Menu = () => {
           </ul>
 
           <h3>Your Order</h3>
+          
+
+      {isLoggedIn ? (
+        <>
+          <h4>Welcome, {userName}!</h4>
+          <button onClick={handleLogout} className="btn btn-danger mb-4">
+            Log Out
+          </button>
+        </>
+      ) : (
+        <form onSubmit={handleLoginSubmit} className="mb-4">
+          <input type="text" name="username" placeholder="Enter your name" required /><p></p>
+          <button type="submit" className="btn btn-primary">
+            Log In
+          </button>
+        </form>
+      )}
           <ul className="list-group list-group-flush">
             {orders.map((order, index) => (
               <li key={index} className="list-group-item">
