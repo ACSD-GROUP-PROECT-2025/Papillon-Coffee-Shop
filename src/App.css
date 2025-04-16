@@ -375,7 +375,6 @@ h6 {
 p {
   width: 100%;
   margin: auto;
-  padding-bottom: 40px;
 }
 
 input, textarea {
@@ -394,6 +393,21 @@ button {
   padding-right: 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
+}
+
+footer-button {
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+footer-button:hover {
+  background-color: #6F4E37;
 }
 
 .ResponsiveContainer {
