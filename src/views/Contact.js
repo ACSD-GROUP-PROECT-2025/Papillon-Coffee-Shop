@@ -60,11 +60,11 @@ const Contact = () => {
       
       <div class="row">
       <div class="columnx1">
-      <h4>Let's Brew Some Conversation!</h4>
+      <h3>Let's Brew Some Conversation!</h3>
       <div className="description w-80">
-        At Papillon Café, we believe the best connections start over coffee — whether you want to share your latest coffee obsession, spill the beans, or just want to perk our ears.
+        <p>At Papillon Café, we believe the best connections start over coffee — whether you want to share your latest coffee obsession, spill the beans, or just want to perk our ears.
         <br/><br/>
-        Drop us a message below!
+        Drop us a message below!</p>
         
         {submitStatus === 'success' && (
           <div className="alert alert-success">

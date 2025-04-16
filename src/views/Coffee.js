@@ -14,14 +14,14 @@ const Coffee = () => {
       
       <div class="row">
       <div class="columnx1">
-      Guatemala is renowned for its high-quality coffee, grown in its rich volcanic soil and unique microclimates. 
+      <p>Guatemala is renowned for its high-quality coffee, grown in its rich volcanic soil and unique microclimates. 
         Coffee production in the country is primarily done on small farms, ensuring careful cultivation and harvesting.
-        The beans are typically grown at high altitudes, which results in a rich, complex flavor profile with chocolatey and fruity notes.
-      <br></br><br></br></div>
+        The beans are typically grown at high altitudes, which results in a rich, complex flavor profile with chocolatey and fruity notes.</p>
+      </div>
 
       <div class="columnx1">
-      Guatemalan coffee is a major export and plays a vital role in the country's economy, supporting thousands of farmers and local communities.
-      <br></br><br></br></div>
+      <p>Guatemalan coffee is a major export and plays a vital role in the country's economy, supporting thousands of farmers and local communities.</p>
+      </div>
 
       <div/>
     </div>
