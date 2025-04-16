@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Menu = () => {
-  // Handle login status and user orders
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [orders, setOrders] = useState([]);
+  const [lastOrder, setLastOrder] = useState([]);
   const [userName, setUserName] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const menuItems = {
     coffee: [
@@ -51,34 +53,67 @@ const Menu = () => {
     ]
   };
 
-  // Function to handle login
   const handleLogin = (name) => {
     setIsLoggedIn(true);
     setUserName(name);
   };
 
-  // Function to handle logout
   const handleLogout = () => {
     setIsLoggedIn(false);
     setUserName('');
     setOrders([]);
+    setSubmitStatus(null);
   };
 
-  // Function to add an item to the order
   const addToOrder = (item) => {
     setOrders((prevOrders) => [...prevOrders, item]);
   };
 
-  // Function to remove an item from the order
   const removeFromOrder = (itemToRemove) => {
     setOrders(orders.filter(item => item !== itemToRemove));
   };
 
-  // Function to handle login form submission
   const handleLoginSubmit = (e) => {
     e.preventDefault();
     const name = e.target.username.value;
     handleLogin(name);
+  };
+
+  const handleOrderSubmit = async (e) => {
+    e.preventDefault();
+    if (orders.length === 0) return;
+
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mblgbjqq", {
+        method: "POST",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          _subject: "New Order from Menu Page",
+          user: userName,
+          items: orders.map(item => `${item.name} – €${item.price}`).join(', '),
+          total: `€${orders.reduce((total, item) => total + item.price, 0).toFixed(2)}`
+        }),
+      });
+
+      if (response.ok) {
+        setLastOrder(orders);
+        setSubmitStatus('success');
+        setOrders([]);
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (err) {
+      console.error('Order submission error:', err);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -108,9 +143,8 @@ const Menu = () => {
         style={{ maxWidth: "400px" }} 
       />
 
-      <div className="row">
+      <div className="row w-100">
         <div className="col-md-6">
-          {/* Coffee */}
           <h3>☕ Coffee</h3>
           <ul className="list-group list-group-flush">
             {menuItems.coffee.map((item, index) => (
@@ -119,7 +153,7 @@ const Menu = () => {
                 {isLoggedIn && (
                   <button
                     onClick={() => addToOrder(item)}
-                    className="btn btn-success btn-sm ml-2"
+                    className="btn btn-success btn-sm ms-2"
                   >
                     Add to Order
                   </button>
@@ -128,7 +162,6 @@ const Menu = () => {
             ))}
           </ul>
 
-          {/* Cold Drinks */}
           <h3>🥤 Cold Drinks</h3>
           <ul className="list-group list-group-flush">
             {menuItems.coldDrinks.map((item, index) => (
@@ -137,7 +170,7 @@ const Menu = () => {
                 {isLoggedIn && (
                   <button
                     onClick={() => addToOrder(item)}
-                    className="btn btn-success btn-sm ml-2"
+                    className="btn btn-success btn-sm ms-2"
                   >
                     Add to Order
                   </button>
@@ -146,7 +179,6 @@ const Menu = () => {
             ))}
           </ul>
 
-          {/* Sweets */}
           <h3>🍰 Sweets</h3>
           <ul className="list-group list-group-flush">
             {menuItems.sweets.map((item, index) => (
@@ -155,7 +187,7 @@ const Menu = () => {
                 {isLoggedIn && (
                   <button
                     onClick={() => addToOrder(item)}
-                    className="btn btn-success btn-sm ml-2"
+                    className="btn btn-success btn-sm ms-2"
                   >
                     Add to Order
                   </button>
@@ -164,7 +196,6 @@ const Menu = () => {
             ))}
           </ul>
 
-          {/* Food */}
           <h3>🥪 Food</h3>
           <ul className="list-group list-group-flush">
             {menuItems.food.map((item, index) => (
@@ -173,7 +204,7 @@ const Menu = () => {
                 {isLoggedIn && (
                   <button
                     onClick={() => addToOrder(item)}
-                    className="btn btn-success btn-sm ml-2"
+                    className="btn btn-success btn-sm ms-2"
                   >
                     Add to Order
                   </button>
@@ -184,7 +215,6 @@ const Menu = () => {
         </div>
 
         <div className="col-md-6">
-          {/* Promotions */}
           <h3>🔥 Promotions</h3>
           <ul className="list-group list-group-flush">
             {menuItems.promotions.map((item, index) => (
@@ -193,7 +223,7 @@ const Menu = () => {
                 {isLoggedIn && (
                   <button
                     onClick={() => addToOrder(item)}
-                    className="btn btn-success btn-sm ml-2"
+                    className="btn btn-success btn-sm ms-2"
                   >
                     Add to Order
                   </button>
@@ -202,7 +232,6 @@ const Menu = () => {
             ))}
           </ul>
 
-          {/* Your Order */}
           <h3>Your Order</h3>
           <ul className="list-group list-group-flush">
             {orders.map((order, index) => (
@@ -210,7 +239,7 @@ const Menu = () => {
                 {order.name} – €{order.price}
                 <button
                   onClick={() => removeFromOrder(order)}
-                  className="btn btn-danger btn-sm ml-2"
+                  className="btn btn-danger btn-sm ms-2"
                 >
                   Remove
                 </button>
@@ -218,10 +247,45 @@ const Menu = () => {
             ))}
           </ul>
 
-          {/* Total */}
           {orders.length > 0 && (
             <div className="mt-3">
               <h4>Total: €{orders.reduce((total, item) => total + item.price, 0).toFixed(2)}</h4>
+              <form onSubmit={handleOrderSubmit}>
+                <button
+                  type="submit"
+                  className="btn btn-primary"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                      Placing Order...
+                    </>
+                  ) : 'Place Order'}
+                </button>
+              </form>
+            </div>
+          )}
+
+          {submitStatus === 'success' && (
+            <div className="alert alert-success mt-3 text-start">
+              <h5>Your order has been placed! We'll brew it with love ☕💛</h5>
+              <hr />
+              <p><strong>Order Summary:</strong></p>
+              <ul>
+                {lastOrder.map((item, index) => (
+                  <li key={index}>
+                    {item.name} – €{item.price}
+                  </li>
+                ))}
+              </ul>
+              <p><strong>Total:</strong> €{lastOrder.reduce((total, item) => total + item.price, 0).toFixed(2)}</p>
+            </div>
+          )}
+
+          {submitStatus === 'error' && (
+            <div className="alert alert-danger mt-3">
+              Oops! Something went wrong while placing your order. Please try again.
             </div>
           )}
         </div>
