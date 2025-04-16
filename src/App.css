@@ -351,6 +351,12 @@ h3 {
   color: #6F4E37 !important;
 }
 
+.form-label {
+  width: 100%;
+  margin: auto;
+  color: #6F4E37 !important;
+}
+
 h3 {
   width: 100%;
   margin: auto;
@@ -375,6 +381,7 @@ h6 {
 p {
   width: 100%;
   margin: auto;
+  text-align: left;
 }
 
 input, textarea {
@@ -422,5 +429,5 @@ footer-button:hover {
   width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; /* optional: centers it */
+  margin: 0 auto;
 }

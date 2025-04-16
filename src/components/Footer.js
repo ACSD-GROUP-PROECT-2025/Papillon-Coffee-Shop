@@ -12,7 +12,7 @@ function Footer() {
           <p></p><Link to="/contact"><h4>Contact Us</h4></Link>
           </div>
           <div className="footer-item">
-            <Link to="https://www.instagram.com/papilloncafedublin"><h4>Instagram</h4></Link>
+            <Link to="https://www.instagram.com/papilloncafedublin" target="_blank" ><h4>Instagram</h4></Link>
           </div>
         </div>
       </footer>

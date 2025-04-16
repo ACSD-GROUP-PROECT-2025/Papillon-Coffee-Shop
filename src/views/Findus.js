@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from "react-router-dom";
 
 const Findus = () => {
   const ORS_API_KEY = "5b3ce3597851110001cf6248d8cdf0d419014e93a3c439310fac24cc"; 
@@ -100,7 +101,7 @@ const Findus = () => {
 
         <div className="columnx2">
           <h3>Where to find us</h3>
-          <a href="https://maps.app.goo.gl/UrhfcruW5DSQetpF8" target="_blank">192 Parnell Street, Dublin 1, D01XW18</a><br></br><br></br>
+          <Link to="https://maps.app.goo.gl/UrhfcruW5DSQetpF8" target="_blank" ><p>192 Parnell Street, Dublin 1, D01XW18</p></Link><br></br><br></br>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.578144735779!2d-6.268318287258041!3d53.35080737217513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670f2929fbfd89%3A0xf330878fcf4522ef!2sPapillon%20Cafe%20Dublin!5e0!3m2!1sen!2sie!4v1744321665601!5m2!1sen!2sie" width="100%" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <br></br>
 <br></br>
@@ -115,7 +116,7 @@ const Findus = () => {
           >
             {isLoading ? "Calculating..." : "Use Your Location"}
           </button>
-          <br></br>or enter your address below:<br></br><br></br>
+          <br></br><p>or enter your address below:</p>
           <input
             type="text"
             placeholder="Enter your address"
