@@ -14,7 +14,7 @@ const Coffee = () => {
       />
 
       <div className="row">
-        <div className="col-md-6 mb-4">
+      <div class="columnx2">
           <p>
             Guatemala is one of the world’s most renowned coffee-growing countries, known for its distinct coffee regions 
             like Antigua, Huehuetenango, and Cobán. Each area produces beans with unique flavor profiles—ranging from sweet 
@@ -28,7 +28,7 @@ const Coffee = () => {
           </p>
         </div>
 
-        <div className="col-md-6 mb-4">
+        <div class="columnx2">
           <p>
             Coffee production plays a vital economic and cultural role in Guatemala. It supports hundreds of thousands of farmers, 
             many of whom are part of cooperatives focused on sustainability and fair trade practices. Coffee exports are a major 
@@ -51,6 +51,7 @@ const Coffee = () => {
           className="img-fluid mb-3 rounded"
           style={{ maxWidth: "300px" }}
         />
+              <div class="columnx2">
         <p>
           <a href="https://www.twofiftysquare.com/" target="_blank" rel="noopener noreferrer">
             Two Fifty Square
@@ -73,7 +74,7 @@ const Coffee = () => {
             Visit their official website for full offerings and subscription details.
           </a>
         </p>
-      </div>
+      </div></div>
     </div>
   );
 };
