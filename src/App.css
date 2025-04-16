@@ -402,6 +402,21 @@ button {
   border-radius: 8px;
 }
 
+footer-button {
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+footer-button:hover {
+  background-color: #6F4E37;
+}
+
 .ResponsiveContainer {
   margin: auto !important;
   width: 50% !important;
