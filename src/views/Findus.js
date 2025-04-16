@@ -102,7 +102,7 @@ const Findus = () => {
         <div className="columnx2">
           <h3>Where to find us</h3>
           <Link to="https://maps.app.goo.gl/UrhfcruW5DSQetpF8" target="_blank" ><p>192 Parnell Street, Dublin 1, D01XW18</p></Link><br></br><br></br>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.578144735779!2d-6.268318287258041!3d53.35080737217513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670f2929fbfd89%3A0xf330878fcf4522ef!2sPapillon%20Cafe%20Dublin!5e0!3m2!1sen!2sie!4v1744321665601!5m2!1sen!2sie" width="100%" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.578144735779!2d-6.268318287258041!3d53.35080737217513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670f2929fbfd89%3A0xf330878fcf4522ef!2sPapillon%20Cafe%20Dublin!5e0!3m2!1sen!2sie!4v1744321665601!5m2!1sen!2sie" width="100%" height="250" allowfullscreen="" title="Google Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 <br></br>
 <br></br>
         </div>
@@ -134,15 +134,15 @@ const Findus = () => {
 
           {travelTimes && (
             <div className="mt-4">
-              <h4>Travel Times:</h4>
+              <h3>Travel Times:</h3>
               <div className="row text-center mt-3">
                 {/* Walk Time */}
                 {travelTimes["foot-walking"] && (
                   <div className="col-md-6">
                     <div className="transport-icon mb-2">
                     </div>
-                    <h5>Walk</h5>
-                    <p>{travelTimes["foot-walking"].split('(')[0].trim()}</p>
+                    <h3>Walk</h3>
+                    <h3>{travelTimes["foot-walking"].split('(')[0].trim()}</h3>
                   </div>
                 )}
                 {/* Bike Time */}
@@ -150,8 +150,8 @@ const Findus = () => {
                   <div className="col-md-6">
                     <div className="transport-icon mb-2">
                     </div>
-                    <h5>Bike</h5>
-                    <p>{travelTimes["cycling-regular"].split('(')[0].trim()}</p>
+                    <h3>Cycle</h3>
+                    <h3>{travelTimes["cycling-regular"].split('(')[0].trim()}</h3>
                   </div>
                 )}
               </div>
