@@ -34,7 +34,7 @@ const Menu = () => {
       { name: "Lemon Cake", price: 3.90 },
       { name: "Carrot Cake", price: 3.90 },
       { name: "Toffee Cake", price: 3.90 },
-      { name: "Cinnamon bun Pastry", price: 3.30 },
+      { name: "Cinnamon Bun", price: 3.30 },
       { name: "Croissants Pastry", price: 3.30 },
       { name: "Caramel bites Pastry", price: 3.30 },
       { name: "Baklava Pastry", price: 3.30 },
