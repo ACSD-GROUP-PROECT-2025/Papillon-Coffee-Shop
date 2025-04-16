@@ -1,6 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import { Link } from "react-router-dom";
+import WeatherWidget from "../components/WeatherWidget";
 
 const Home = () => {
 
@@ -13,6 +14,7 @@ const Home = () => {
         className="img-fluid mb-4"
         style={{ maxWidth: "400px"}} 
       />
+      <WeatherWidget />
       <div class="row">
   <div class="columnx2">
     <h3>Your Dublin Escape</h3>
