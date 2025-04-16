@@ -431,3 +431,55 @@ footer-button:hover {
   display: block;
   margin: 0 auto;
 }
+
+.btn-sm.ms-2 {
+  float: right;
+}
+
+.btn-success.btn-sm.ms-2 {
+  background-color: #6F4E37;
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.btn-success.btn-sm.ms-2:hover {
+  background-color: #5a3d2a;
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.btn-danger.btn-sm.ms-2 {
+  background-color: #3E2723;
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.btn-danger.btn-sm.ms-2:hover {
+  background-color: #6F4E37;
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
