@@ -87,7 +87,7 @@ const Menu = () => {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch("https://formspree.io/f/mblgbjqq", {
+      const response = await fetch("https://formspree.io/f/mrbpnpap", {
         method: "POST",
         headers: {
           'Accept': 'application/json',
